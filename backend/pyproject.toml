@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "emissioneye"
+version = "0.1.0"
+description = ""
+authors = ["DIMFLIX-OFFICIAL <dimflix.official@gmail.com>"]
+readme = "README.md"
+package-mode = false
+packages = [{include = "*", from="src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.115.5"
+loguru = "^0.7.2"
+environs = "^11.2.1"
+uvicorn = "^0.32.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[virtualenvs]
+create = true
+in-project = true
+
+[tool.poetry.scripts]
+app = "src.app:start"
