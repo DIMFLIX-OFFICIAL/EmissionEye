@@ -8,7 +8,7 @@ import src.config as cfg
 
 
 @unprotected.post("/get_sensors")
-async def get_my_account_info(request: Request):
+async def get_sensors(request: Request):
     return JSONResponse(json.dumps(dict(
         marks=cfg.SENSORS
     )))

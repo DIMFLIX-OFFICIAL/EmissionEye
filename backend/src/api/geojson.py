@@ -8,5 +8,5 @@ import src.config as cfg
 
 
 @unprotected.post("/get_geojson")
-async def get_my_account_info(request: Request):
-    return JSONResponse(json.dumps(cfg.GEOJSON))
+async def get_geojson(request: Request):
+    return JSONResponse(json.dumps(cfg.GEOJSON_DATA))

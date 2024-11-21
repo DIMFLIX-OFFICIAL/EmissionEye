@@ -1,13 +1,16 @@
 <script setup>
 import "leaflet/dist/leaflet.css";
 import { onMounted, ref } from "vue";
-import { getSensors, getGeoJson } from "@/modules/api";
+import { getSensors, getGeoJson, getFactories } from "@/modules/api";
 import { LMap, LTileLayer, LMarker, LIcon, LControlZoom, LGeoJson } from "@vue-leaflet/vue-leaflet";
-import Sensor from "@/assets/icons/sensor";
+import Sensor from "@/components/icons/sensor";
+import Factory from "@/components/icons/factory";
 
 const markers = ref([]);
 const geojson = ref({});
+const factories = ref({});
 const isMapReady = ref(false);
+const currentInfo = ref(null);
 
 const zoom = 12;
 const mapCenter = [56.3287, 44.002]
@@ -41,6 +44,7 @@ onMounted(async () => {
 	let sensors = await getSensors()
 	markers.value.push(...sensors["marks"]);
 	geojson.value = await getGeoJson()
+	factories.value = await getFactories()
 	isMapReady.value = true;
 	
 })
@@ -62,15 +66,39 @@ onMounted(async () => {
 				</l-icon>
 			</l-marker>
 
+			<l-marker v-for="factory in factories.features" :lat-lng="factory.geometry.coordinates" @mouseover="currentInfo = factory.properties.name" @mouseout="currentInfo = null">
+				<l-icon class-name="factoryIcon">
+					<div class="headline">
+						<Factory style="{max-width: 20px; max-height: 20px; height: 20px; width: 20px;}"/>
+					</div>
+				</l-icon>
+			</l-marker>
+
 			<l-geo-json :geojson="geojson" :options="{ onEachFeature: onEachFeature }"/>
 		</l-map>
 	</div>
+
+	<div v-if="currentInfo" class="info-box">{{ currentInfo }}</div>
 </template>
 
 <style>
 .map {
+	position: relative;
 	height: 100vh;
 	width: 100%;
+	z-index: 0;
+}
+
+.info-box {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #797479;
+    padding: 10px;
+    border-radius: 5px;
+	color: #ffffff;
+	font-size: 20px;
+	z-index: 1;
 }
 
 .leaflet-control-attribution {
@@ -79,6 +107,16 @@ onMounted(async () => {
 
 .sensorIcon {
 	background-color: #e64553;
+	padding: 10px 15px 10px 13px;
+	border-radius: 10% 80% 80% 80%;
+	text-align: center;
+	width: auto !important;
+	height: auto !important;
+	margin: 0 !important;
+}
+
+.factoryIcon {
+	background-color: #89b4fa;
 	padding: 10px 15px 10px 13px;
 	border-radius: 10% 80% 80% 80%;
 	text-align: center;

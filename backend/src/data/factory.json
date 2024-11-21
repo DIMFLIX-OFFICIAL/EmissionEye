@@ -1,0 +1,651 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "Машиностроительный Завод им. М. Воробьева" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.94898675870436, 56.31255703587886]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Нижегородский завод точного машиностроения" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.99722894279929, 56.288315618263944]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Завод им. Г. И. Петровского" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [44.042452313478954, 56.31884551874686]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Павловский машиностроительный завод" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [44.0040197132445, 56.240634951443525]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Горьковский металлургический завод" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.908399820069356, 56.313344297367514]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Нижегородский Завод Радиоизмерительной Аппаратуры"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.998755442799265, 56.291246810479095]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Нижегородцкий машиностроительный завод" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.8851417132445, 56.333034138380995]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Нижегородский завод теплообменного оборудования"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.8645909973394, 56.36306611240192]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Горьковский завод аппаратуры связи им. А. С. Попова"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.95307506665692, 56.31180999874319]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Термаль" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.968329213244495, 56.244743910327635]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Завод электромонтажных инструментов" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.9467755973394, 56.27079669525282]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Приокский механический завод" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.99806209733942, 56.24707040484734]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "ЗАО Завод Труд" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [44.06425411211679, 56.233639212395154]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Zavod Coca-Cola" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.94997968030661, 56.27404963746195]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Ао Завод Электромаш" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.991499335974446, 56.30513590605446]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Гидромаш" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.98497620410564, 56.3013264139592]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "АО Нижегородский завод 70-летия Победы" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.89217515870438, 56.33400891094738]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "ЭРКОН НПО" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.99656948938683, 56.286413163306825]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Завод ИНКОМ" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.945108858704394, 56.30984785104764]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "ООО ЗаводФорм" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.95635267810983, 56.28798842357319]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "ВОЛГА, судостроительный завод" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.86453648143432, 56.362510495768284]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Нижегородский литейный завод, ООО" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.888099213244494, 56.25535708120945]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Орбита Завод" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.99634294279926, 56.28237804544178]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Нижегородский Молочный Завод № 1, ОАО" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.875239089386845, 56.25700229192725]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Завод МАЙ" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [44.08243115075184, 56.30787365514619]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "РИЛС, механический завод, ОАО" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [44.01752197348175, 56.31163782927367]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "А-завод" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.98688041983488, 56.307162398817674]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Красная Этна" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.90893697460948, 56.29605486377013]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Храпуновский инструментальный завод" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.94790410445732, 56.29557858485285]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Завод Алгол" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.8548879814343, 56.33056480525383]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Новый Завод" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.879964742799295, 56.23771391328786]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "ПАО Завод Красное Сормово" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.870351766656924, 56.35966477887735]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Новый Завод LPro" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.8789024280219, 56.238178207742244]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "АЛБ Групп" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.99071681324451, 56.24167311536084]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Завод Квантовой Электроники, ЗАО" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [44.01671084392699, 56.3100340496571]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Оконный завод" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.98173605870436, 56.28486855692146]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Нпп Механический Завод, Ооо" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.93014335187952, 56.26567132094112]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Агромаш-НН" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.89014625384186, 56.264288997827144]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Борский силикатный завод" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [44.013131413244515, 56.322354842869636]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ОАО 170 Ремонтный завод средств обеспечения полётов"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.98291605870436, 56.283635984889095]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Гиада-НН, ООО" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.834382843927, 56.34976472114166]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Авиастроительный завод Сокол" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.85815794297513, 56.32783296371077]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Нпп Механический Завод, Ооо" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.85197148256203, 56.31905079146603]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Электроустановочных Изделий Завод" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.96620048143433, 56.249708928323045]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Пивоваренный Завод" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.95284394392699, 56.29344599679113]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "НижегородСтальПром" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [44.00279273597443, 56.288512313606866]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "МЮЗ" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.92483151324447, 56.3195420762307]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Группа компаний «НМЖК»" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.91581929158363, 56.312068408628726]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Опытно-конструкторское Бюро Машиностроения им. И.И. Африкантова"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.9045754721782, 56.32082720925418]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Дельта Трафо" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [44.01960382006934, 56.31883379472515]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "АрморГрупп, ООО" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.82423945075185, 56.24583537712323]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "ЗАО Завод ЭЛЕКТРОРАЗЪЕМ" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.862777427187275, 56.24717067837111]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Фабрика Композитов, ООО" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.79850312006935, 56.350859435866944]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Сормовская Кондитерская Фабрика" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.85847194392696, 56.35337217737196]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "ООО Нижегородский полимерный завод" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.906993950751826, 56.31437616139131]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "ООО Приокский Механический Завод" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.97724448938684, 56.259215783524695]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "ПКФ СпецМет" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [44.00060933597444, 56.291229670373454]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Завод Штампов И Пресс-форм"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.90030579051456, 56.27682169587851]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Нижегородский телевизионный завод им В.И.Ленина"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.96816616665695, 56.254570975684985]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ооо \"Борский Завод Торгового Оборудования\""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [44.07895906665693, 56.3505987404307]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "РусВинил"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [44.12360152802189, 56.11080902565231]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ЗЖБК №1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.90149002802189, 56.258615325786515]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ЗАО \"78 Док Н.М.\""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.85872538938685, 56.304593000000025]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "АО \"Мельинвест\""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.951212297339396, 56.3035840818183]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Время-Ч ЗАО"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [44.017139997339406, 56.308891488433375]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "АО \"Электро Интел\""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.9959398187658, 56.288270103491676]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Славянская Мебельная Компания"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.82097058143431, 56.351175141149454]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Гидротермаль"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [44.10796612802189, 56.29629607273534]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Автозаводская ТЭЦ"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.89186022802189, 56.242991806326245]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Нижегородский православный свечной завод"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.921404628021875, 56.32537540898121]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ШПАЛОЗАВОД"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [44.015600958704376, 56.32446310784388]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "\"Чайка-сервис\", автомобильный завод"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.7950761280219, 56.366580400000004]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Фабрика комфорта, ООО"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.98553082802188, 56.328427825632474]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Завод имени Я.М. Свердлова"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.39198633597443, 56.25821565063666]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ООО\"Посуда\""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.99714645870438, 56.41571750000001]
+      }
+    }
+  ]
+}

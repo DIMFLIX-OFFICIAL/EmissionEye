@@ -1,14 +1,21 @@
-import json
 from environs import Env
 from pathlib import Path
 
 env = Env()
 PROJECT_ROOT: Path = Path(__file__).resolve().parent.parent.parent
 BACKEND_ROOT: Path = Path(__file__).resolve().parent.parent
-env.read_env(PROJECT_ROOT / ".env")
+BACKEND_SRC_ROOT: Path = Path(__file__).resolve().parent
 
+GEOJSON_PATH = BACKEND_SRC_ROOT / "data" / "geo.json"
+FACTORIES_PATH = BACKEND_SRC_ROOT / "data" / "factory.json"
+
+
+env.read_env(PROJECT_ROOT / ".env")
 API_HOST = env.str("API_HOST")
 API_PORT = env.int("API_PORT")
+API_OPENWEATHERMAP = env.str("API_OPENWEATHERMAP")
+API_OPENWEATHERMAP_CITY = env.str("API_OPENWEATHERMAP_CITY")
+API_OPENWEATHERMAP_URL = f'http://api.openweathermap.org/data/2.5/weather?q={API_OPENWEATHERMAP_CITY}&appid={API_OPENWEATHERMAP}&units=metric'
 
 SENSORS = [
     [56.330159, 43.838768],
@@ -32,5 +39,9 @@ SENSORS = [
 	[56.231803, 43.944712]
 ]
 
-with open(BACKEND_ROOT / "geojson.json", "r") as f:
-    GEOJSON = json.load(f)
+GEOJSON_DATA = {
+    "type": "FeatureCollection", 
+    "features": []
+}
+
+FACTORIES = {}

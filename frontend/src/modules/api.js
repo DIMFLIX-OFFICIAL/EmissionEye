@@ -19,6 +19,14 @@ export async function getSensors() {
 		.catch(e => { return null })
 }
 
+export async function getFactories() {
+	return api.post("/api/get_factories")
+		.then(response => {
+			return JSON.parse(response.data)
+		})
+		.catch(e => { return null })
+}
+
 export async function getGeoJson() {
 	return api.post("/api/get_geojson")
 		.then(response => {
