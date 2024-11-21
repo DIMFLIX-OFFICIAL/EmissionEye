@@ -4,7 +4,7 @@ from contextlib import asynccontextmanager
 import src.config as cfg
 import uvicorn
 from loguru import logger
-from src.api import sensors
+from src.api import sensors, geojson
 from src.api.routers import unprotected
 from src.loader import app
 

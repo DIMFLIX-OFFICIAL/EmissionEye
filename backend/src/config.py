@@ -1,8 +1,10 @@
+import json
 from environs import Env
 from pathlib import Path
 
 env = Env()
 PROJECT_ROOT: Path = Path(__file__).resolve().parent.parent.parent
+BACKEND_ROOT: Path = Path(__file__).resolve().parent.parent
 env.read_env(PROJECT_ROOT / ".env")
 
 API_HOST = env.str("API_HOST")
@@ -29,3 +31,6 @@ SENSORS = [
 	[56.257103, 43.980366],
 	[56.231803, 43.944712]
 ]
+
+with open(BACKEND_ROOT / "geojson.json", "r") as f:
+    GEOJSON = json.load(f)

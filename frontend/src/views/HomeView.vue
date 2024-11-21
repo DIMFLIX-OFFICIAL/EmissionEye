@@ -1,11 +1,13 @@
 <script setup>
 import "leaflet/dist/leaflet.css";
 import { onMounted, ref } from "vue";
-import { getSensors } from "@/modules/api";
-import { LMap, LTileLayer, LMarker, LIcon, LControlZoom } from "@vue-leaflet/vue-leaflet";
+import { getSensors, getGeoJson } from "@/modules/api";
+import { LMap, LTileLayer, LMarker, LIcon, LControlZoom, LGeoJson } from "@vue-leaflet/vue-leaflet";
 import Sensor from "@/assets/icons/sensor";
 
 const markers = ref([]);
+const geojson = ref({});
+const isMapReady = ref(false);
 
 const zoom = 12;
 const mapCenter = [56.3287, 44.002]
@@ -18,16 +20,35 @@ const tileLayerUrl = "https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}
 const layerType = "base"
 const tileLayerName = "OpenStreetMap"
 
+const rgbToCssColor = (rgbArray) => {
+    return `rgb(${rgbArray[0]}, ${rgbArray[1]}, ${rgbArray[2]})`;
+};
+
+const styleFunction = (feature) => {
+    return {
+        fillColor: rgbToCssColor(feature.properties.color) || '#3388ff',
+        color: 'black', // Цвет границы
+        weight: 1,
+        fillOpacity: 0.6,
+    };
+};
+
+const onEachFeature = (feature, layer) => {
+    layer.setStyle(styleFunction(feature));
+};
+
 onMounted(async () => {
 	let sensors = await getSensors()
-	console.log(sensors)
 	markers.value.push(...sensors["marks"]);
+	geojson.value = await getGeoJson()
+	isMapReady.value = true;
+	
 })
 </script>
 
 <template>
 	<div class="map">
-		<l-map ref="map" v-model:zoom="zoom" :center="mapCenter" :useGlobalLeaflet="false" :options="{zoomControl: false}">
+		<l-map v-if="isMapReady" ref="map" v-model:zoom="zoom" :center="mapCenter" :useGlobalLeaflet="false" :options="{zoomControl: false}">
 
 			<l-tile-layer :url="tileLayerUrl" :layer-type="layerType" :name="tileLayerName" />
 			
@@ -40,6 +61,8 @@ onMounted(async () => {
 					</div>
 				</l-icon>
 			</l-marker>
+
+			<l-geo-json :geojson="geojson" :options="{ onEachFeature: onEachFeature }"/>
 		</l-map>
 	</div>
 </template>

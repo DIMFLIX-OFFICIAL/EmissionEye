@@ -7,8 +7,6 @@ from .routers import unprotected
 import src.config as cfg
 
 
-@unprotected.post("/get_sensors")
+@unprotected.post("/get_geojson")
 async def get_my_account_info(request: Request):
-    return JSONResponse(json.dumps(dict(
-        marks=cfg.SENSORS
-    )))
+    return JSONResponse(json.dumps(cfg.GEOJSON))
