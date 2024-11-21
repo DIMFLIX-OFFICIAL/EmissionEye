@@ -220,7 +220,7 @@ class GeoJSONApp:
 
         # Используем ThreadPoolExecutor для распараллеливания
         with ThreadPoolExecutor() as executor:
-            all_geojson_data = list(tqdm(executor.map(process_feature, self.geojson_data["features"][:3]), total=len(self.geojson_data["features"][:3])))
+            all_geojson_data = list(tqdm(executor.map(process_feature, self.geojson_data["features"]), total=len(self.geojson_data["features"])))
 
         cfg.GEOJSON_DATA = all_geojson_data
         with open(cfg.GEOJSON_PATH, 'w') as f:
