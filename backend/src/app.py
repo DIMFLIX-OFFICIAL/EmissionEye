@@ -17,7 +17,7 @@ async def run_background_task():
         loop = asyncio.get_running_loop()
         await loop.run_in_executor(executor, gd.run)
         logger.info("Geojson has been updated successfully!")
-        await asyncio.sleep(20)
+        await asyncio.sleep(1200)
 
 
 @asynccontextmanager

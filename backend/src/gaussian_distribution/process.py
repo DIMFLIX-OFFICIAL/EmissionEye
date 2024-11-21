@@ -189,11 +189,7 @@ class GeoJSONApp:
 
     def run(self):
         weather_checker = WeatherChecker()
-
-        logger.info("я тут")
         weather_checker.fetch_weather()
-
-        logger.info("я тут1")
         results_cat = weather_checker.check_conditions()
 
         model = RSDM(
